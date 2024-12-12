@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admission</title>
+	<link rel="stylesheet" type="text/css" href="assets\bootstrap-5.3.3\css\bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="college.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <style>
+        body {
+           /* font-family: Arial, sans-serif;*/
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+        }
+        .header h1 {
+            color: yellow;
+        }
+        .admission-guidelines {
+           
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .admission-guidelines h3 {
+            color: red;
+        }
+        footer {
+            background-color: darkslategrey;
+            color: white;
+            padding: 20px 0;
+        }
+       /* .social-icons i {
+            color: yellow;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-icons i:hover {
+            color: lightblue;
+        }*/
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1><i class="fa-solid fa-building-columns"></i> Admission</h1>
+    </header>
+
+    <!-- Admission Guidelines -->
+    <div class="container my-4">
+        <div class="admission-guidelines">
+            <h3>ADMISSION PROCESS GUIDELINES</h3>
+            <p>1) Are you interested in taking admission at RCMS? RCMS offers an "Online Admission System" where you can book your seat in your desired course.<br><br>
+               2) Simply fill out the Application Form and book your seat by clicking the button below:<br>
+               <button class="btn btn-primary mt-2">Click Here!</button><br><br>
+               3) Pay your Seat Booking Amount (For BCA: ₹10,200; For BBA & BHM: ₹15,200) as well as Admission Fees through NEFT.</p>
+        </div>
+    </div>
+
+    <!-- Admission Form -->
+    <div class="container my-4">
+        <h1 class="text-center w3-card 4"style="padding: 10px; color: green;">Admission Form</h1>
+        <form  class="row g-3">
+            <div class="col-md-6">
+                <label for="fname" class="form-label">First Name:</label>
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter your first name..." required>
+            </div>
+            <div class="col-md-6">
+                <label for="lname" class="form-label">Last Name:</label>
+                <input type="text" id="lname" name="lname" class="form-control" placeholder="Enter your last name..." required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email..." required>
+            </div>
+            <div class="col-md-6">
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number..." required>
+            </div>
+            <div class="col-md-6">
+                <label for="course" class="form-label">Course:</label>
+                <select id="course" name="course" class="form-select" required>
+                    <option value="bca">BCA</option>
+                    <option value="bba">BBA</option>
+                    <option value="bhm">BHM</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="price" class="form-label">Price:</label>
+                <input type="number" id="price" name="price" class="form-control" placeholder="Enter the price..." required>
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" rows="4" class="form-control" placeholder="Enter your message..." required></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success" id="admissionForm">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Address -->
+               <div class="col-md-3">
+                    <h5 class="text-warning"><i class="fa-solid fa-location-dot"></i> Address</h5>
+                    <p>
+                        Vill-Padmapukuria,<br>
+                        P.O + P.S- Contai,<br>
+                        Dist-Purba Medinipur, W.B (721401)<br>
+                        <i class="fa-solid fa-envelope"></i> pallabdasdas@gmail.com<br>
+                        <i class="fa-solid fa-phone"></i> 9932099499 / 7477761558
+                    </p>
+                </div>
+                <!-- Links -->
+                <div class="col-md-3">
+                    <h5 class="text-warning"><i class="fa-solid fa-star"></i> Important Links</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-hand-point-right"></i> BCA</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Hospitality Management</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Admission</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Placement</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Contact</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Notice</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Blog</li>
+                    </ul>
+                </div>
+                <!-- Social Icons -->
+  				<div class="col-md-3">
+                    <h5 class="text-warning"><i class="fa-solid fa-newspaper"></i> Follow Us</h5>
+                    <h3 class="social-icons" style="color: yellow;">
+                        <i class="fa-brands fa-whatsapp w3-hover-text-white"></i>
+                        <i class="fa-brands fa-facebook w3-hover-text-white"></i>
+                        <i class="fa-brands fa-linkedin w3-hover-text-white"></i>
+                        <i class="fa-brands fa-twitter w3-hover-text-white"></i>
+                        <i class="fa-brands fa-instagram w3-hover-text-white"></i>
+                    </h3>
+                </div>
+                <!-- Google Map -->
+                <div class="col-md-3">
+                    <h5 class="text-warning">Google Map</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.885504208363!2d87.734762173901!3d21.784691861389376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0326f87e6e8479%3A0xb610eefe9d9387c1!2sContai%20College%20of%20Learning%20%26%20Management%20Science!5e0!3m2!1sen!2sin!4v1713520555759!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                &copy; 2024 RCMS | All Rights Reserved | Created by Pallab Das
+            </div>
+        </div>
+    </footer>
+
+
+
+<!-- <script src="jquery-3.7.1.min"></script> -->
+<script type="text/javascript" src="assets\bootstrap-5.3.3\js\bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+   document.getElementById('admissionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted successfully!');
+        });
+</script>
+</body>
+</html>

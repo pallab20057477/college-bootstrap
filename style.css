@@ -1,0 +1,422 @@
+ /* Styling the navbar brand logo and text */
+body {
+    font-family: Ubuntu, sans-serif;
+}        
+        .navbar-brand img {
+            height: 50px;
+            width: auto;
+        }
+        .navbar-brand span {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Navigation link styles */
+        .nav-link {
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            position: relative;
+            color: white !important;
+        }
+
+        /* Hover effect for navigation links */
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0;
+            height: 2px;
+            background-color: orange;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: orange !important;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Custom navbar background on hover */
+        .navbar:hover {
+            background-color: #0056b3 !important; /* Slightly darker blue */
+            transition: background-color 0.5s ease;
+        }
+/*<!--nav complete-->*/
+.social-icons i {
+            font-size: 20px;
+            color: white;
+            margin-right: 10px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icons i:hover {
+            transform: scale(1.2);
+            color: orange;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+        }
+
+        .contact-info i {
+            font-size: 18px;
+            color: white;
+        }
+        .brand-section img {
+            height: 100px;
+        }
+
+        .title h2 {
+            color: #005099;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .title p {
+            margin: 5px 0;
+            color: #005099;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .s_link span a {
+            text-decoration: none;
+            color: #005099;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .s_link span a:hover {
+            color: #FF9800;
+            transform: scale(1.1);
+        }
+
+        .social2, .fa-whatsapp, .fa-linkedin {
+            font-size: 20px;
+            margin-left: 10px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .social2:hover, .fa-whatsapp:hover, .fa-linkedin:hover {
+            color: #FF9800;
+            transform: scale(1.2);
+        }
+        /*header end*/
+ .aboutus-subtitle .subtitle {
+            color: #ff3115;
+    position: relative;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+        }
+.subtitle::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background-color: #0f3342;
+    bottom: 0;
+    left: 0;
+}
+        .aboutus-subtitle h4 {
+            color: #FF5722;
+            font-weight: bold;
+        }
+
+        .aboutus-subtitle p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .aboutus-subtitle .btn-primary {
+            background-color: #005099;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .aboutus-subtitle .btn-primary:hover {
+            background-color: #FF5722;
+            transform: scale(1.1);
+        }
+
+        .aboutus-left img {
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .aboutus-left img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .aboutus-left:hover .overlay {
+            opacity: 1;
+        }
+/*about*/
+
+.choosecclms-section {
+            padding: 3rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .choosecclms-section .choose-content-title h5 {
+            font-size: 1.8rem;
+            color: #005099;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .choosecclms-section .choose-content-title p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .whychoose_item {
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #005099;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .whychoose_item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .whychoose_item img {
+            max-width: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .whychoose_item p {
+            font-size: 0.95rem;
+            color: #fff;
+            font-weight: 500;
+        }
+
+
+/*chose */
+        /* Section Styling */
+.student-says-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.student-says-section h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.student-says-section h5 i {
+    color: #007bff;
+    margin-right: 10px;
+}
+/*video*/
+/* Transparent Card Form */
+.card {
+  background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */ /* Adds a subtle blur effect to the background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for form inputs */
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #007bff;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.invalid-feedback {
+  font-size: 0.875rem;
+  color: red;
+}
+
+/* Background image section */
+#contacttop {
+  background: url('https://cdn.pixabay.com/photo/2019/07/29/04/35/student-4369850_640.jpg') center/cover no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+/* Divider */
+.divider {
+  height: 3px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: #007bff;
+}
+
+/* Owl Carousel Styling */
+/* General section styles */
+.student-says-section {
+    background-color: #f7f7f7;
+    padding: 60px 0;
+}
+
+.student-says-section h5 {
+    font-size: 28px;
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Testimonial items */
+.testimonial_item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+        border: 4px solid #007bff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial_item:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling for testimonials */
+.testimonial_image img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border: 4px solid #007bff;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial_image img:hover {
+    transform: scale(1.1);
+}
+
+/* Testimonial text */
+.testimonial_item h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.testimonial_item p.text-muted {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 12px;
+}
+
+.testimonial_item .testi_details {
+    font-size: 16px;
+    color: #34495e;
+    line-height: 1.7;
+}
+
+.testimonial_item .testi_details i {
+    color: #007bff;
+}
+
+/* Owl Carousel navigation and dots */
+.owl-nav button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.owl-nav button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+/* Owl carousel container */
+.owl-carousel {
+    position: relative;
+}
+
+/* Make the carousel responsive */
+@media (max-width: 768px) {
+    .testimonial_item {
+        padding: 20px;
+    }
+
+    .testimonial_item h4 {
+        font-size: 18px;
+    }
+
+    .testimonial_item .testi_details {
+        font-size: 14px;
+    }
+
+    .testimonial_image img {
+        width: 100px;
+        height: 100px;
+    }
+}
+/*palla*/
+.card-header {
+    border-bottom: 0 solid rgba(0, 0, 0, .125);
+    color:  #007bff;
+}
+/*footer*/
+ footer {
+            background-color: darkslategrey;
+            color: white;
+            padding: 20px 0;
+        }

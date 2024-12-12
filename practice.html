@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Testimonials</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Custom Styles for Testimonials */
+        .testimonial_item {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .testimonial_image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .testimonial_item h4 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .testimonial_item p.text-muted {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .testi_details {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <section class="student-says-section" id="placementtop">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h5>
+                        <i class="fa fa-user" aria-hidden="true"></i> Student Says
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme" id="studentCarousel">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial_item">
+                            <div class="testimonial_image">
+                                <img src="testimonials/PROBIR_DAS.png" alt="Probir Das">
+                            </div>
+                            <h4>Probir Das</h4>
+                            <p class="text-muted">SANJIVANI KOLKATA</p>
+                            <p class="testi_details">
+                                <i class="fa fa-quote-left"></i>
+                                Teaching at CCLMS Management College is exceptionally good as the Faculty focuses on every aspect of the topic. They not only focus on the curriculum but also enhance our innate wisdom.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial_item">
+                            <div class="testimonial_image">
+                                <img src="testimonials/Subhajit_Pramanik.jpg" alt="Subhajit Pramanik">
+                            </div>
+                            <h4>Subhajit Pramanik</h4>
+                            <p class="text-muted">Opezee</p>
+                            <p class="testi_details">
+                                <i class="fa fa-quote-left"></i>
+                                CCLMS Management College is a very good college. It has an excellent faculty preparing and motivating its students for a better future.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial_item">
+                            <div class="testimonial_image">
+                                <img src="testimonials/PRAVANGSHU_PRADHAN.jpg" alt="Pravangshu Pradhan">
+                            </div>
+                            <h4>Pravangshu Pradhan</h4>
+                            <p class="text-muted">Webgrity</p>
+                            <p class="testi_details">
+                                <i class="fa fa-quote-left"></i>
+                                CCLMS Management College is one of the best colleges in our district for its unique teaching methods and active Placement Cell.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#studentCarousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1024: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

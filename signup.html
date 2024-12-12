@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In & Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets\bootstrap-5.3.3\css\bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 5% auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h3 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <div class="container mt-5">
+    <div class="form-container">
+      <h3 class="text-center">Sign Up</h3>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="mb-3">
+          <label for="signupEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="signupPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="signupPassword" placeholder="Create a password" required>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Sign Up</button>
+      </form>
+      <p class="text-center mt-3">
+        Already have an account? <a href="sigin.html">Sign In</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="jquery-3.7.1.min"></script> 
+<script type="text/javascript" src="assets\bootstrap-5.3.3\js\bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" type="text/css" href="assets\bootstrap-5.3.3\css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/jpg" href="college.jpg">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <style>
+        body {
+            background-color: #f4f8fb;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body p, .card-body a {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .card-body a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .card-body a:hover {
+            text-decoration: underline;
+        }
+
+        .card-footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #e3e3e3;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #218838;
+        }
+
+        .contact-form input, .contact-form textarea {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: none;
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+       footer {
+            background-color: darkslategrey;
+            color: white;
+            padding: 20px 0;
+        }
+        .social-btns .btn {
+            border-radius: 50%;
+            font-size: 1.3rem;
+            width: 50px;
+            height: 50px;
+        }
+
+        .social-btns .btn-facebook { background-color: #3b5998; }
+        .social-btns .btn-instagram { background-color: #e1306c; }
+        .social-btns .btn-whatsapp { background-color: #25d366; }
+        .social-btns .btn-twitter { background-color: #1da1f2; }
+        .social-btns .btn-linkedin { background-color: #0077b5; }
+
+        .social-btns .btn:hover {
+            opacity: 0.9;
+        }
+
+        .google-map iframe {
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    
+        <!-- Contact Section -->
+        <div class="text-center mb-4 w3-card 4"style="margin: 0;padding: 10px;">
+            <h1 class="text-primary">
+                <i class="fa-solid fa-users"></i>
+                <u style="text-decoration: none; ">Contact Us!</u>
+            </h1>
+        </div>
+<div class="container py-5">
+        <div class="row">
+            <!-- Contact Details Section -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-3">
+                    <h3 class="card-header text-white bg-primary text-center">CONTACT DETAILS</h3>
+                    <div class="card-body">
+                        <p><i class="fa-solid fa-house-chimney"></i> Padmapukuria, Contai, Purba Medinipur, West Bengal (721411)</p>
+                        <p>
+                            <a href="https://www.truecaller.com/" class="text-decoration-none">
+                                <i class="fa-solid fa-phone"></i> 7477761558 / 993277782
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:pallabdasdas@gmail.com" class="text-decoration-none">
+                                <i class="fa-solid fa-envelope"></i> pallabdasdas@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="col-md-6 mb-4">
+                <div class="card p-3">
+                    <h4 class="card-header text-white bg-success text-center">Get in Touch</h4>
+                    <div class="card-body contact-form">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter Your Name.." required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number.." required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="Enter Your Email.." required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" placeholder="Write Your message.." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom">Contact</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="text-center mb-4 google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.885504208363!2d87.734762173901!3d21.784691861389376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0326f87e6e8479%3A0xb610eefe9d9387c1!2sContai%20College%20of%20Learning%20%26%20Management%20Science!5e0!3m2!1sen!2sin!4v1713520555759!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="row text-center">
+            <div class="col-12">
+                <h3 class="text-primary mb-3 w3-card 4" style="padding: 10px;">Follow Us</h3>
+                <div class="social-btns">
+                    <a href="www.facebook.com" class="btn btn-facebook mx-2">
+                        <i class="fa-brands fa-facebook w3-text-white"></i>
+                    </a>
+                    <a href="#" class="btn btn-instagram mx-2">
+                        <i class="fa-brands fa-instagram w3-text-white"></i>
+                    </a>
+                    <a href="#" class="btn btn-twitter mx-2">
+                        <i class="fa-brands fa-twitter w3-text-white"></i>
+                    </a>
+                    <a href="#" class="btn btn-linkedin mx-2">
+                        <i class="fa-brands fa-linkedin w3-text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Address -->
+                <div class="col-md-3">
+                    <h5 class="text-warning"><i class="fa-solid fa-location-dot"></i> Address</h5>
+                    <p>
+                        Vill-Padmapukuria,<br>
+                        P.O + P.S- Contai,<br>
+                        Dist-Purba Medinipur, W.B (721401)<br>
+                        <i class="fa-solid fa-envelope"></i> pallabdasdas@gmail.com<br>
+                        <i class="fa-solid fa-phone"></i> 9932099499 / 7477761558
+                    </p>
+                </div>
+                <!-- Links -->
+                <div class="col-md-3">
+                    <h5 class="text-warning"><i class="fa-solid fa-star"></i> Important Links</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa-solid fa-hand-point-right"></i> BCA</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Hospitality Management</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Admission</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Placement</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Contact</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Notice</li>
+                        <li><i class="fa-solid fa-hand-point-right"></i> Blog</li>
+                    </ul>
+                </div>
+                <!-- Social Icons -->
+                <div class="col-md-3">
+                    <h5 class="text-warning"><i class="fa-solid fa-newspaper"></i> Follow Us</h5>
+                    <h3 class="social-icons" style="color: yellow;">
+                        <i class="fa-brands fa-whatsapp w3-hover-text-white"></i>
+                        <i class="fa-brands fa-facebook w3-hover-text-white"></i>
+                        <i class="fa-brands fa-linkedin w3-hover-text-white"></i>
+                        <i class="fa-brands fa-twitter w3-hover-text-white"></i>
+                        <i class="fa-brands fa-instagram w3-hover-text-white"></i>
+                    </h3>
+                </div>
+                <!-- Google Map -->
+                <div class="col-md-3">
+                    <h5 class="text-warning">Google Map</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.885504208363!2d87.734762173901!3d21.784691861389376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0326f87e6e8479%3A0xb610eefe9d9387c1!2sContai%20College%20of%20Learning%20%26%20Management%20Science!5e0!3m2!1sen!2sin!4v1713520555759!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                &copy; 2024 RCMS | All Rights Reserved | Created by Pallab Das
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="jquery-3.7.1.min"></script> -->
+<script type="text/javascript" src="assets\bootstrap-5.3.3\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>
